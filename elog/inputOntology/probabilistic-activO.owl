@@ -1,0 +1,3354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:elog="http://elog#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/davide/ontologies/2019/9/untitled-ontology-26#"
+     xmlns:EWlab-prob-activityOnt="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#">
+    <Ontology rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl">
+        <versionIRI rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl/2.0"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#confidence -->
+
+    <AnnotationProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#confidence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceDuring -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceDuring">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceOn -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#contains -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasArtifact -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasArtifact">
+        <rdfs:subPropertyOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#contains"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentHeightVariation -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentHeightVariation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentPosture -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentPosture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasDayTime -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasDayTime">
+        <rdfs:subPropertyOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasTimeGranularity"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasDayTipe -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasDayTipe">
+        <rdfs:subPropertyOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasTimeGranularity"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Day"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoomInside -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoomInside">
+        <rdfs:subPropertyOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#contains"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoute -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasTimeGranularity -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasTimeGranularity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#includesCommunicationRoute -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#includesCommunicationRoute">
+        <rdfs:subPropertyOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#contains"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#isMovingOn -->
+
+    <ObjectProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#isMovingOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+        <rdfs:range rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#measuresValue -->
+
+    <DatatypeProperty rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#measuresValue">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeHeight -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeHeight">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeLocation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeLocation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeTransportRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeTransportRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWIth_SPEED_Medium -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWIth_SPEED_Medium">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MediumSpeed"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Negative -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Negative">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentHeightVariation"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NegativeHeightVariation"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Positive"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeHeight"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentHeightVariation"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullHeightVariation"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeHeight"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Positive -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Positive">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentHeightVariation"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveHeightVariation"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceOn"/>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                        <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeLocation"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#canTakePlaceOn"/>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                        <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeLocation"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_High -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_High">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HighSpeed"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Low -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Low">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LowSpeed"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullSpeed"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeSpeed"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasCurrentSpeed"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeSpeed"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_NonPublic -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_NonPublic">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoute"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NonPublicTransportRoute"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeTransportRoute"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_Public"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_Public -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_Public">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasRoute"/>
+                                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicTransportRoute"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_HavingSomeTransportRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+        <rdfs:comment>NOTE MODELLAZIONE PROBABILISTICA
+
+Di base, le attività sono modellate utilizzando 2 tipologie di assiomi:
+
+1. Assiomi certi: vincoli hard che le attività devono soddisfare in qualsiasi caso possibile. Nella log-linear DL fanno parte della &quot;deterministic CBOX&quot; e non contribuiscono a definire la distribuzione log-lineare sui mondi possibili
+
+2. Assiomi probabilistici: vincoli che esprimono incertezza relativa alle proprietà delle attività che si vuole esplicitare con questi assiomi. A questi assiomi viene associato un peso che intuitivamente contribuisce ad aumentare o diminuire la probabilità calcolata. Più è alto il peso, più l&apos;assioma contribuirà positivamente nella probabilità finale. Nella log-linear DL, questi assiomi fanno parte della &quot;uncertain CBOX&quot;, che è la porzione della KB che determina la distribuzione log-lineare sui mondi possibili
+
+3. Per la modellazione di dati contestuali a grana fine (es. LowSpeed, MediumSpeed, HighSpeed), è necessario modellare tutti i possibili casi sulle diverse attività necessarie altrimenti la distribuzione log-lineare così definita da risultati non proprio verosimili
+(es. se modello Cycling, dico che come vincolo hard ci deve essere velocità positiva, e che in presenza di alta velocità la probabilità finale deve abbassarsi di molto. Se modello solo HighSpeed, la probabilità finale resta comunque 0.5, come se l&apos;assioma probabilistico non ci fosse. Modellando tutti i casi possibili si ottiene il risultato desiderato)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ActivityCharacterization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Afternoon -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Afternoon">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Airplane -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Airplane">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Amusement -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Amusement">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Arcade -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Arcade">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ArcadeBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ArcadeBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathTub -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathTub">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Beach -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Beach">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BeachUmbrella -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BeachUmbrella">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BedRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BedRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bench -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bench">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bike -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bike">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Blackboard -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Blackboard">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BreakRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BreakRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BrushingTeeth -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BrushingTeeth">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalActivity"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BureauxBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BureauxBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BureauxBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bus -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bus">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CampusBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CampusBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Car -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Car">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Chair -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Chair">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cinema -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cinema">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorpStation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorpStation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorps -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorps">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorpStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ClassRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ClassRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Clothing -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Clothing">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garment"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ColdWaterSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ColdWaterSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Comb -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Comb">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ConferenceRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ConferenceRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cooker -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cooker">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Corridor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Corridor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cycling -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cycling">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità solo positiva
+- Variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- velocità bassa: sebbene la bassa velocità è un fattore soggetto alle condizioni del traffico, in generale, non è comune andare in bici a velocità pari a quelle di una camminata. Quindi modello questo fattore con un peso leggermente negativo, che contribuirà ad abbassare di poco la probabilità finale
+
+- media velocità: questo fattore dovrebbe contribuire positivamente alla fattibilità di questa attività, poichè tendenzialmente, si va in bici a velocità più sostenuta
+
+- alta velocità: questo fattore deve abbassare di molto la probabilità perché è molto poco probabile che l&apos;utente in genere vada a velocità così elevate. Questo peso negativo favorisce quindi attività come MovingByCar e movimento su mezzi di trasporto, che sono le uniche attività che più frequentemente si verificano a tali velocità
+
+- meteo avverso: se le condizioni metereologiche sono negative, questo inficia negativamente sulla probabilità con cui l&apos;utente va in bicicletta (TODO)
+(sul meteo positivo non dico nulla poichè non lo ritengo particolarmente discriminante al fine del riconoscimento)
+
+- temperatura bassa: questo fattore influenza negativamente la probabilità con cui l&apos;utente può andare in bicicletta poichè solitamente le persone ci vanno quando non fa freddo (TODO)
+
+- momento della giornata NOTTE: di notte è meno probabile che l&apos;utente possa andare in bicicletta, ma non impossibile. Faccio quindi pesare questo fattore in maniera negativa sulla probabilità totale (TODO)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dawn -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dawn">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Day -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Day">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Deckchair -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Deckchair">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Desk -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Desk">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Table"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#DiningRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#DiningRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#DinnerTable -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#DinnerTable">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Table"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Door -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Door">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Drape -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Drape">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dusk -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dusk">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Elevator -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Elevator">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ElevatorDown -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ElevatorDown">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Negative"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#onElevator"/>
+        <rdfs:comment>L&apos;attività è messa esplicitamente in disgiunzione con l&apos;insieme delle attività caratterizzate da una variazione di altezza positiva</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ElevatorUp -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ElevatorUp">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#onElevator"/>
+        <rdfs:comment>L&apos;attività è messa esplicitamente in disgiunzione con l&apos;insieme delle attività caratterizzate da una variazione di altezza negativa</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Evening -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Evening">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Exhibition -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Exhibition">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HistoricalBuilding"/>
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousBuilding"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garden -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garden">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garment -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garment">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingDownstairs -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingDownstairs">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Negative"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingUpstairs"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità positiva e non alta (vedi Disjoint with)
+- Variazione di altezza non nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- ambiente indoor: è molto più probabile percorrere le scale in ambienti indoor
+
+- ambiente outdoor: è molto meno probabile, ma non impossibile, fare delle scale in ambienti outdoor
+
+- velocità bassa: è molto probabile che si percorrano le scale a velocità bassa
+
+- velocità media: è possibile che l&apos;utente percorra le scale velocemente, ma in media come caso è meno probabile rispetto al precedente</rdfs:comment>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingUpstairs -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingUpstairs">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HighSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HighSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed"/>
+        <rdfs:comment>GIANCANE: definisco la velocità alta come maggiore di 30km/h (8.4 m/s)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HistoricalBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HistoricalBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Holiday -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Holiday">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Day"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Weekday"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HomeBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HomeBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HotWaterSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HotWaterSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HumiditySensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndividualActivity -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndividualActivity">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Activity"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasActor"/>
+                        <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Amusement"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorSportsCenter -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorSportsCenter">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Kettle -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Kettle">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Kitchen -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#KitchenTable -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#KitchenTable">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Table"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Laboratory -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Laboratory">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lamp -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lamp">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LightingFixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LightSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LightSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LightingFixture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LightingFixture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LivingRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LivingRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Loudspeaker -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Loudspeaker">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LowSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LowSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed"/>
+        <rdfs:comment>GIANCANE: definisco la velocità bassa come compresa fra 0 (escluso) e 7km/h (circa 2 m/s)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LunchTime -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LunchTime">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità nulla
+- variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- momento della giornata: in media, si sta sdraiati quando si dorme, quindi è più probabile di notte (TODO)
+
+- ambiente indoor: in generale più probabile
+
+- ambiente outdoor: in generale meno probabile (possibile se ad esempio si sta sdraiati in spiaggia)
+
+- luminosità ambientale: contribuisce positivamente quando non c&apos;è luminosità, segnale che é probabile che l&apos;utente stia dormendo (TODO)
+
+- rumore ambientale: stesso motivo di sopra (TODO)</rdfs:comment>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LyingPosture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LyingPosture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MallBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MallBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Mask -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Mask">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garment"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Meadow -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Meadow">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MediumSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MediumSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed"/>
+        <rdfs:comment>GIANCANE: definisco la velocità media come compresa fra circa 7 km/h (escluso) e 20 km/h</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MeetingRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MeetingRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Metro -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Metro">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Mirror -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Mirror">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Morning -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Morning">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Motorbike -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Motorbike">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingByCar -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingByCar">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità solo positiva
+- Variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- alta velocità: questo fattore contribuisce in maniera rilevante per questa attività, poichè è una di quelle che é capace, in media, di portare l&apos;utente a velocità molto alte.
+
+- bassa velocità: quando si è in macchina, è ovviamente possibile andare a basse velocità, in particolare quando c&apos;è molto traffico. E dato che questo fattore è altamente variabile e imprevedibile, assegno peso 0 per non sbilanciarmi
+
+- meteo avverso: se le condizioni meterologiche non sono buone e valgono i vincoli hard, posso ritenere probabile che l&apos;utente si stia muovendo in auto piuttosto che a piedi o in bicicletta (TODO)
+
+- temperatura bassa: fattore positivamente impattante per questa attività. L&apos;obiettivo è quello di favorire l&apos;andare in macchina piuttosto che Cycling, dato che queste due sono facilmente confondibili. Infatti a basse temperature è difficile che l&apos;utente usi una bici per muoversi. (TODO)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NegativeHeightVariation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NegativeHeightVariation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Night -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Night">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NonPedestrianOutdoorLocation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NonPedestrianOutdoorLocation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NonPublicTransportRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NonPublicTransportRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicTransportRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Noon -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Noon">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullHeightVariation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullHeightVariation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Office -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Office">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorAmusement -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorAmusement">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Amusement"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorField -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorField">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PDA -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PDA">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Park -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Park">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalActivity -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalActivity">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndividualActivity"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalComputer -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalComputer">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Phone -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Phone">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndividualActivity"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveHeightVariation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveHeightVariation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveSpeed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Printer -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Printer">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateVehicle -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateVehicle">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Vehicle"/>
+        <disjointWith rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Projector -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Projector">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Promenade -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Promenade">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicTransportRoute -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicTransportRoute">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Vehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Rails -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Rails">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#RestRoom -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#RestRoom">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#River -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#River">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Road -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Road">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Room">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza - deterministic CBOX)
+
+- Velocità positiva e non alta (vedi Disjoint with)
+- Variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza - uncertain CBOX)
+
+- ambiente indoor
+- ambiente outdoor
+- velocità bassa
+- velocità media
+
+- meteo: in base alla common-sense knowledge, è più probabile che l&apos;utente stia correndo in presenza di condizione metereologiche idonee, quindi tempo sereno. Tuttavia è anche possibile che l&apos;utente corra sotto condizioni avverse, ad es. durante una pioggia, seppur con probabilità molto più bassa (TODO)
+
+- temperatura: è più probabile che l&apos;utente vada a correre con temperature idonee, es. dai 18 ai 26 gradi. A temperature più basse non è impossibile, ma è meno probabile (TODO)
+
+- momento della giornata: se l&apos;utente ha l&apos;abitudine di correre in un preciso momento della giornata, questo fattore può essere incisivo nel calcolo della probabilità (TODO)</rdfs:comment>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.098612288668</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SeatedPosture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SeatedPosture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shower -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shower">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sidewalk -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sidewalk">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sink -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sink">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sitting -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sitting">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità nulla
+- variazinoe di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- momento della giornata: utile per le abitudini dell&apos;utente (es. lavoro)
+
+- vicinanza ai mezzi di trasporto: è possibile che l&apos;utente stia aspettando un mezzo ad una fermata su una panchina</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SittingTransport -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SittingTransport">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_Public"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità solo positiva
+- Variazione di altezza nulla
+- Vicinanza a fermate/percorsi di mezzi pubblici (TODO)
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- alta velocità: questo fattore impatta positivamente questa attività, poichè è una di quelle che é capace di portare l&apos;utente a velocità molto alte.
+
+- ??? bassa/media velocità: non mi esprimo su questo fattore poichè questi due tipi di velocità sono molto variabili, in particolare soggetti allo stato del traffico ???
+
+- momento della giornata NOTTE: di notte dovrebbe esserci meno possibilità di usare mezzi pubblici dato che le linee cittadine si riducono notevolmente  (TODO)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Smartphone -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Smartphone">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sofa -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sofa">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SoundSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SoundSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sport -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sport">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Stairs -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Stairs">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Standing -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Standing">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità nulla
+- Variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- vicinanza a fermate di mezzi di trasporto: se l&apos;utente è in prossimità di una fermata, insiemi ai vincoli hard, possiamo supporre come molto probabile che stia attenendo un mezzo pubblico</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingPosture -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingPosture">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingTransport -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingTransport">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_TRANSP_ROUTE_Public"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling"/>
+        <rdfs:comment>Tutto come SittingTransport.
+E&apos; il classificatore qui a discriminare più opportunamene le due attività dato che riesce a riconoscere la postura dell&apos;utente</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Steps -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Steps">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StoreBuilding -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StoreBuilding">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StoveBurnerSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StoveBurnerSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Street -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Street">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Table -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Table">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Taxi -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Taxi">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TemperatureSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Terminal -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Terminal">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ContextData"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeOfDay">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ToiletBowl -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ToiletBowl">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Track -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Track">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorCommunicationRoute"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Train -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Train">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Tram -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Tram">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicVehicle"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Outdoor"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndividualActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; Deterministic CBOX)
+
+Per tutte le attività afferenti a questa categoria posso dire per certo che vengono svolte solamente in ambienti outdoor, a velocità positiva e senza variazioni di altezza.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UrbanArea -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UrbanArea">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorLocation"/>
+            </Restriction>
+        </disjointWith>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UsingPcSensor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UsingPcSensor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Vehicle -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingObject"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWIth_SPEED_Medium"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Low"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Positive"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità positiva e non alta (vedi Disjoint with)
+- Variazione di altezza nulla
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)
+
+- velocità bassa
+- velocità media</rdfs:comment>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWIth_SPEED_Medium"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Low"/>
+        <EWlab-prob-activityOnt:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</EWlab-prob-activityOnt:confidence>
+    </Axiom>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Warehouse -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Warehouse">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#WaterHeater -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#WaterHeater">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathroomFixture"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Weekday -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Weekday">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Day"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Wood -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Wood">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PedestrianOutdoorLocation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#accounting -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#accounting">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#airport -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#airport">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#amusement_park -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#amusement_park">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Park"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#aquarium -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#aquarium">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Exhibition"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#art_gallery -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#art_gallery">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Exhibition"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#atm -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#atm">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UrbanArea"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bakery -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bakery">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bank -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bank">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bar -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bar">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#beauty_salon -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#beauty_salon">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bicycle_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bicycle_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#book_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#book_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bowling_alley -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bowling_alley">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bus_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#bus_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#cafe -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#cafe">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#campground -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#campground">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_dealer -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_dealer">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_rental -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_rental">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_repair -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_repair">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_wash -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#car_wash">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#casino -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#casino">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#cemetery -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#cemetery">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#church -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#church">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#city_hall -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#city_hall">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#clothing_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#clothing_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#convenience_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#convenience_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#courthouse -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#courthouse">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#dentist -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#dentist">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#department_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#department_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#doctor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#doctor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#electrician -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#electrician">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#electronics_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#electronics_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#embassy -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#embassy">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#fire_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#fire_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorps"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#florist -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#florist">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#funeral_home -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#funeral_home">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#furniture_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#furniture_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#gas_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#gas_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#gym -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#gym">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sport"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hair_care -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hair_care">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hardware_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hardware_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#home_goods_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#home_goods_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hospital -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hospital">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#indu_temple -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#indu_temple">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#insurance_agency -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#insurance_agency">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#jwewlry_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#jwewlry_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#laundry -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#laundry">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#lawyer -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#lawyer">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#library -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#library">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Building"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#liquor_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#liquor_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#local_government_office -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#local_government_office">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#locksmith -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#locksmith">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#lodging -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#lodging">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HomeBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#meal_delivery -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#meal_delivery">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#meal_takeaway -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#meal_takeaway">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#mosque -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#mosque">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#movie_theater -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#movie_theater">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#moving_company -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#moving_company">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#museum -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#museum">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Exhibition"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#night_club -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#night_club">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#onElevator -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#onElevator">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_HEIGHT_NonZero"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_LOCATION_Indoor"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Null"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+        <rdfs:comment>HARD CONSTRAINTS (certezza -&gt; deterministic CBOX)
+
+- Velocità nulla
+- Variazione di altezza positiva o negativa
+- Ambienti solo indoor (devono avere l&apos;ascensore - proprietà ancora non modellata)
+- ??? ambiente illuminato ??? 
+
+SOFT CONTRAINTS (incertezza -&gt; uncertain CBOX)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#painter -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#painter">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#parking -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#parking">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#pet_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#pet_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#pharmacy -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#pharmacy">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#physioterapist -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#physioterapist">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#plumber -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#plumber">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#police -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#police">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorps"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#post_office -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#post_office">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#real_estate_agency -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#real_estate_agency">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#restaurant -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#restaurant">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorAmusement"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#roofing_contractor -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#roofing_contractor">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Labor"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#rv_park -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#rv_park">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Park"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#school -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#school">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CampusBuilding"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#shoe_store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#shoe_store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#shopping_mall -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#shopping_mall">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#spa -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#spa">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sport"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#stadium -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#stadium">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sport"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#storage -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#storage">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Warehouse"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+                            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StoreBuilding"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#street_address -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#street_address">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UrbanArea"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#street_number -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#street_number">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#UrbanArea"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#subway_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#subway_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#supermarket -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#supermarket">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shopping"/>
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#store"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#synagogue -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#synagogue">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousCult"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#taxi_stand -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#taxi_stand">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#train_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#train_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#transit_station -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#transit_station">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PublicStation"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#travel_agency -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#travel_agency">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Bureaux"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#university -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#university">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#school"/>
+        <disjointWith>
+            <Restriction>
+                <onProperty rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#hasLocationType"/>
+                <someValuesFrom rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorLocation"/>
+            </Restriction>
+        </disjointWith>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#veterinary_care -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#veterinary_care">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PrivateServices"/>
+    </Class>
+    
+
+
+    <!-- http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#zoo -->
+
+    <Class rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#zoo">
+        <rdfs:subClassOf rdf:resource="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#OutdoorServices"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWIth_SPEED_Medium"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_High"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Act_PossibleWith_SPEED_Low"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Afternoon"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dawn"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Dusk"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Evening"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LunchTime"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Morning"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Night"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Noon"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Arcade"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Corridor"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Elevator"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Stairs"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Artifact"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommunicationRoute"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GooglePlace"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HeightVariation"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LocationType"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Posture"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Route"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Speed"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#TimeGranularity"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BathTub"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Shower"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ToiletBowl"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#WaterHeater"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Blackboard"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Comb"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Computer"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cooker"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Kettle"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Loudspeaker"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Phone"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Printer"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Projector"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#BureauxBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CampusBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cinema"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CivilCorpStation"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#CommercialBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HistoricalBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HomeBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HospitalBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#IndoorSportsCenter"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#ReligiousBuilding"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Terminal"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Warehouse"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Cycling"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MovingByCar"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SittingTransport"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingTransport"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Device"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Fixture"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Furniture"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Garment"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sensor"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Vehicle"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#GoingStairs"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Lying"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Running"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sitting"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Standing"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Walking"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#onElevator"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#HighSpeed"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LowSpeed"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#MediumSpeed"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#LyingPosture"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#SeatedPosture"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#StandingPosture"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NegativeHeightVariation"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#NullHeightVariation"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PositiveHeightVariation"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PersonalActivity"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#PhysicalActivity"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Traveling"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Promenade"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Rails"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#River"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Road"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Sidewalk"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Steps"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Street"/>
+            <rdf:Description rdf:about="http://ewserver.di.unimi.it/CARE/EWlab-prob-activityOnt.owl#Track"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

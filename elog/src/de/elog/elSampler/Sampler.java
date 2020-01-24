@@ -79,7 +79,11 @@ public class Sampler {
 			reader.read(args[0]);
 			//Read event axioms
 			OWLSamplingEventReader eventReader = new OWLSamplingEventReader();
-			eventReader.read(sampleFilePath);
+			try {
+				eventReader.read(sampleFilePath);
+			} catch (Exception e){
+				System.err.println("!!!! " + e.getMessage() + " !!!!");
+			}
 			System.out.println("Successfully read in " + (System.currentTimeMillis()-startTime) + " milliseconds.");
 			System.out.println("====================================================");
 			System.out.println("Sample marginal probabilities using MC-ILP...");

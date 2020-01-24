@@ -11,18 +11,7 @@ import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
-import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAnnotation;
-import org.semanticweb.owlapi.model.OWLAnnotationProperty;
-import org.semanticweb.owlapi.model.OWLAnnotationValue;
-import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLLiteral;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.model.*;
 
 
 import com.clarkparsia.owlapi.explanation.PelletExplanation;
@@ -31,7 +20,7 @@ import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 
 
-
+import uk.ac.manchester.cs.owl.owlapi.OWLAnnotationAssertionAxiomImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLLiteralImpl;
 import de.elog.Constants;
 
@@ -58,9 +47,9 @@ public class MisSampler {
 			
 			case 2:
 				if (args[0].startsWith("-s")) {
-					numOfSamples = Integer.valueOf(args[0].substring(2));
+					numOfSamples = Integer.parseInt(args[0].substring(2));
 				} else if (args[0].startsWith("-e")) {
-					numOfExplanations = Integer.valueOf(args[0].substring(2));
+					numOfExplanations = Integer.parseInt(args[0].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
 					System.out.println("Arguments specific to the -sm reaosner:");
@@ -76,9 +65,9 @@ public class MisSampler {
 				
 			case 3:
 				if (args[0].startsWith("-s")) {
-					numOfSamples = Integer.valueOf(args[0].substring(2));
+					numOfSamples = Integer.parseInt(args[0].substring(2));
 				} else if (args[0].startsWith("-e")) {
-					numOfExplanations = Integer.valueOf(args[0].substring(2));
+					numOfExplanations = Integer.parseInt(args[0].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
 					System.out.println("Arguments specific to the -sm reaosner:");
@@ -91,9 +80,9 @@ public class MisSampler {
 					return;
 				}
 				if (args[1].startsWith("-s")) {
-					numOfSamples = Integer.valueOf(args[1].substring(2));
+					numOfSamples = Integer.parseInt(args[1].substring(2));
 				} else if (args[1].startsWith("-e")) {
-					numOfExplanations = Integer.valueOf(args[1].substring(2));
+					numOfExplanations = Integer.parseInt(args[1].substring(2));
 				} else {
 					System.err.println("Arguments -e or -s expected.");
 					System.out.println("Arguments specific to the -sm reaosner:");
@@ -151,28 +140,28 @@ public class MisSampler {
 		OWLOntology ontology2 = manager.createOntology();
 		
 		//stores the axioms so be sampled
-		ArrayList<OWLAxiom> sampleAxioms = new ArrayList<OWLAxiom>();
+		ArrayList<OWLAxiom> sampleAxioms = new ArrayList<>();
 		
 		//stores the "hard" axioms that we don't want to sample
-		ArrayList<OWLAxiom> hardAxioms = new ArrayList<OWLAxiom>();
+		ArrayList<OWLAxiom> hardAxioms = new ArrayList<>();
 		
 		//stores the "hard" axioms that we don't want to sample
-		HashSet<OWLAxiom> zeroAxioms = new HashSet<OWLAxiom>();
+		HashSet<OWLAxiom> zeroAxioms = new HashSet<>();
 		
 		//we need to built a set that counts the number of occurrences of the axioms in independent sets
-		Hashtable<OWLAxiom,Integer> count = new Hashtable<OWLAxiom,Integer>();
+		Hashtable<OWLAxiom,Integer> count = new Hashtable<>();
 		
 		//stores the axioms with their confidence values
-		Hashtable<OWLAxiom,Double> axiomConfidence = new Hashtable<OWLAxiom,Double>();
+		Hashtable<OWLAxiom,Double> axiomConfidence = new Hashtable<>();
 		
 		//stores the axioms in the WeigtedAxiom format (for ranking purposes)
-		ArrayList<SampleAxiom> axiomProbability = new ArrayList<SampleAxiom>();
+		ArrayList<SampleAxiom> axiomProbability = new ArrayList<>();
 		
 		//stores the degree of each node
-		Hashtable<OWLAxiom,Integer> degree = new Hashtable<OWLAxiom,Integer>();
+		Hashtable<OWLAxiom,Integer> degree = new Hashtable<>();
 		
 		//the index for the conflicts (indexed by the axiom)
-		HashMap<OWLAxiom, Set<Set<OWLAxiom>>> conflictIndex = new HashMap<OWLAxiom, Set<Set<OWLAxiom>>>();
+		HashMap<OWLAxiom, Set<Set<OWLAxiom>>> conflictIndex = new HashMap<>();
 					
 		//iterate over all axioms in the loaded ontology
 		Set<OWLAxiom> allAxioms = ontology1.getAxioms();
@@ -181,7 +170,7 @@ public class MisSampler {
 			//get the axiom without the annotation
 			OWLAxiom axWithoutAnnotation = axiom.getAxiomWithoutAnnotations();
 			//stores the confidence value of the current axiom
-			Double confidence = 0.0;	
+			Double confidence = 0.0;
 			//add to the sample sets only if it has confidence
 			if ( (confidence = mSampler.getConfidenceValue(axiom)) != null) {
 			
@@ -190,7 +179,7 @@ public class MisSampler {
 					//if not, add it to the set of axioms to be sampled
 					sampleAxioms.add(axWithoutAnnotation);
 					//set the count to zero
-					count.put(axWithoutAnnotation, new Integer(0));
+					count.put(axWithoutAnnotation, 0);
 					//set the confidence to the given value
 					axiomConfidence.put(axWithoutAnnotation, confidence);
 				}
@@ -204,7 +193,7 @@ public class MisSampler {
 		System.out.println("Number of axioms to sample: " + sampleAxioms.size());
 		
 		//stores the conflicts as a set of axiom sets
-		HashSet<HashSet<OWLAxiom>> conflictSet = new HashSet<HashSet<OWLAxiom>>();
+		HashSet<HashSet<OWLAxiom>> conflictSet = new HashSet<>();
 		
 		if (numOfExplanations >= 1) { 
 		
@@ -213,6 +202,7 @@ public class MisSampler {
 			// Create the reasoner and load the ontology
 			PelletReasoner reasoner = PelletReasonerFactory.getInstance().createReasoner( ontology2 );
 			// Create an explanation generator
+			PelletExplanation.setup();
 			PelletExplanation expGen = new PelletExplanation( reasoner );
 
 			// Create the reasoner and load the ontology
@@ -255,7 +245,7 @@ public class MisSampler {
 					somethingWasRemoved = false;
 					//only look at axioms that are not a conflict in themselves
 					for (Set<OWLAxiom> axiomSet : conflictSet) {
-						
+
 						if (axiomSet.size() <= 1) {
 							
 							//System.out.println("AAAAAAAAARGH   " + axiomSet);
@@ -294,14 +284,14 @@ public class MisSampler {
 				
 				//here we iterate over the set one more time to store 
 				//the degree of the axiom and the index of the axiom
-				for (Set<OWLAxiom> axiomSet : conflictSet) {
+					for (Set<OWLAxiom> axiomSet : conflictSet) {
 					
 					System.out.println(axiomSet);
 					
 					for (OWLAxiom currentAxiom : axiomSet) {
 
 						//stores the degree of the axiom for statistics and convergence tests
-						degree.put(currentAxiom, new Integer(0));
+						degree.put(currentAxiom, 0);
 						
 						//add the axiom to the ones to be sampled
 						if (sampleAxioms.indexOf(currentAxiom) == -1) {
@@ -327,7 +317,7 @@ public class MisSampler {
 				}
 			final long durationReasoning = endTimeReasoning - startTimeReasoning;
 			
-			System.out.println("...computation finished in " + (double)((double)durationReasoning/1000000000.0) + " seconds!");
+			System.out.println("...computation finished in " + ((double)durationReasoning/1000000000.0) + " seconds!");
 			System.out.println(conflictSet.size() + " minimal inconsistent subsets found.");
 			//System.out.println(conflictSet);
 		
@@ -355,7 +345,7 @@ public class MisSampler {
 						max_degree = new_degree;
 						maxDegreeAxiom = vertex;
 					}
-					degree.put(vertex, new Integer(new_degree));
+					degree.put(vertex, new_degree);
 				}
 			}
 	
@@ -363,7 +353,7 @@ public class MisSampler {
 			System.out.println("Maximum degree: " + max_degree + "  axiom: " + maxDegreeAxiom);
 	
 			//stores one individual sample
-			HashSet<OWLAxiom> sample = new HashSet<OWLAxiom>();
+			HashSet<OWLAxiom> sample = new HashSet<>();
 			
 			//burn in iterations
 			int burn_in = 10;
